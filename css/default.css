@@ -15,8 +15,6 @@
     body {
         height: 100vh;
         border: 1px solid green;
-
-        
         display: flex;
         flex-direction: column;
     }
@@ -35,11 +33,14 @@
         height: 50%;
         background: #fee433;
     }
-.preview {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;}
+
+    .preview {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .lowerLip-wrapper {
         position: absolute;
         bottom: 0;
