@@ -65,3 +65,20 @@
         z-index: 1;
     }
    
+   .speedButton {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      background: red;
+   }
+   .speedButton button {
+    padding: 5px;
+    margin: 5px;
+   }
+   .speedButton button.active {
+      background: yellow;
+   }

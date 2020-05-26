@@ -1,6 +1,12 @@
 ! function() {
     let code = ` 
+ /*
+  * 比卡丘开始出击
+  */
 
+ /*
+  * 鼻子 我的鼻子
+  */
 
     .nose {
 
@@ -12,6 +18,10 @@
         top: 28px;
         margin-left: -12px;
     }
+
+/*
+ * 我的大眼睛
+ */
 
     .eye {
         width: 49px;
@@ -45,6 +55,10 @@
         margin-left: 90px;
     }
 
+/*
+ * 英俊的脸庞
+ */
+
     .face {
         width: 68px;
         height: 68px;
@@ -65,6 +79,10 @@
         top: 85px;
         margin-left: 116px;
     }
+
+/*
+ * 亲亲唇
+ */
 
     .upperLip {
         height: 25px;
@@ -90,7 +108,9 @@
 
     }
 
-
+/*
+ * 小可爱舌头
+ */
 
     .lowerLip {
         position: absolute;
@@ -129,7 +149,7 @@
             if (n >= code.length) {
                 clearInterval(timer)
             }
-        }, 10)
+        }, 1)
     }
     writeCode('', code)
 }.call()
