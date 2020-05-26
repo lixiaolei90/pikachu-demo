@@ -151,5 +151,9 @@
             }
         }, 1)
     }
+    $('.speedButton').on('click', 'button', function(e) {
+        $(this).addClass('active')
+            .siblings().removeClass('active')
+    })
     writeCode('', code)
 }.call()
