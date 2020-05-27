@@ -136,22 +136,35 @@
     }
 				
 	`
-
+	let duration = 50
     function writeCode(pre, code, fn) {
         let container = document.querySelector('#code')
         let styleTag = document.querySelector('#styleTag')
         let n = 0
-        let timer = setInterval(() => {
+        let timer = setTimeout(function run() {
             n += 1
             container.innerHTML = code.substring(0, n)
             styleTag.innerHTML = code.substring(0, n)
             container.scrollTop = container.scrollHeight
-            if (n >= code.length) {
-                clearInterval(timer)
+            if (n < code.length) {
+                timer = setTimeout(run, duration)
             }
-        }, 1)
+        }, duration)
     }
     $('.speedButton').on('click', 'button', function(e) {
+    	let speed = $(this).attr("id")
+    	switch(speed) {
+    		case "speed-fast":
+    			duration = 20
+    			break
+    		case "speed-medium":
+    			duration = 50
+    			break
+    		case "speed-slow":
+    			duration = 70
+    			break
+    	}
+    	console.log(speed)
         $(this).addClass('active')
             .siblings().removeClass('active')
     })
